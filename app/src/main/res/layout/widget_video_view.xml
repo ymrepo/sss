@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ym.sss.views.AspectRatioFrameLayout
+            android:id="@+id/layout_aspect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            app:resize_mode="fit">
+
+            <com.ym.sss.views.SPlayerTexture
+                android:id="@+id/view_texture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.ym.sss.views.AspectRatioFrameLayout>
+
+        <com.ym.sss.player.controller.ControllerWidget
+            android:id="@+id/widget_controller"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</layout>
